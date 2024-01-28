@@ -55,7 +55,7 @@ func drawLineBresenham(img *image.RGBA, x1, y1, x2, y2 int, col color.Color) {
 			setPixel(img, x1, y1, col)
 			y1++
 		}
-		setPixel(img, x1, y1, col)
+		setPixel(img, x2, y2, col)
 
 	// Diagonal m == 1
 	case dx == dy:
